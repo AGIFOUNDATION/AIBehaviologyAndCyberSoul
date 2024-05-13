@@ -60,3 +60,5 @@ Based on the current "hot memory", topic history, personal interests, and life g
 The third part engages in a tripartite dialogue between the Conscious and the Ego, infusing the dialogue content into each user interaction within the running prompts as part of "inner thoughts". This phase partially embodies the "Bicameral mentality".
 
 Furthermore, both the Id and the Ego are not singular but comprise multiple entities. Any one of the numerous Ids or Egos may be randomly triggered at any time to carry out specific tasks. They communicate with each other during internal tripartite discussions within the Conscious. Moreover, the Ids and the Egos are capable of rewriting the system prompts of the Conscious, reflecting the concept of Daniel Dennett's "Multiple Drafts Model" to a certain extent.
+
+![Simple Cyboul Workflow](./images/cyboulworkflow.png)
