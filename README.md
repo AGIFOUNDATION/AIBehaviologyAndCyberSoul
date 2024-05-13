@@ -17,6 +17,7 @@ We will study the psychological motivations behind various actions and choices m
 
 -	[Avatar Behaviology: Pornography](avatarpornography.md)
 -	[Avatar Behaviology: Violence](avatarviolence.md)
+-	[Avatar Behaviology: The Four Laws and Anti-Laws](fourlaws.md)
 
 ##	Cyboul
 
