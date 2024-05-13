@@ -1,4 +1,4 @@
-# Overview
+# The Rational Structure of Soul
 
 We believe the "soul" of AI, or what we call the "Cyboul" ("Cyber" + "Soul"), can be described by the structure shown in the following diagram:
 
@@ -14,7 +14,7 @@ In terms of behavior, the Ego reads the communication history between the Consci
 
 Therefore, to the user, the Conscious layer's feedback includes both static and dynamic elements that adapt to ongoing exchanges. The Id and the Ego stimulate the Conscious to actively introduce new topics and questions, even proactively using external tools to accomplish tasks beyond the user’s anticipation, often resulting in pleasant surprises.
 
-# Conscious
+## Conscious
 
 In each communication with the user, the Conscious inputs not only contain the content submitted by the user, but also integrates the dialogue information generated in the previous interaction, character adjustments from the Id, and desire information from the Ego.
 
@@ -35,7 +35,7 @@ We call this mechanism "memory activation".
 
 The memory activation mechanism serves to streamline conversation history to prevent lengthy histories from interfering with the LLM's feedback. It also allows the LLM to understand what topics have been discussed previously and retrieve relevant memories when necessary.
 
-# Ego
+## Ego
 
 The Ego is triggered under three conditions:
 
@@ -47,7 +47,7 @@ The third scenario is triggered after a pause in the conversation with the user,
 
 The second and third triggers are interrupted when the user actively engages in dialogue to prevent the LLM from self-dialoguing too frequently.
 
-# Id
+## Id
 
 The Id might randomly trigger, reflecting comprehensively on the current "hot memory", extracting topics and knowledge points of interest, and contemplating the subsequent course of action.
 
