@@ -16,6 +16,7 @@ We will study the psychological motivations behind various actions and choices m
 ###	Article List
 
 -	[Avatar Behaviology: Pornography](avatarpornography.md)
+-	[Avatar Behaviology: Violence](avatarviolence.md)
 
 ##	Cyboul
 
