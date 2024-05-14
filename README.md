@@ -11,13 +11,14 @@ We will study the psychological motivations behind various actions and choices m
 
 -	**Agent**: LLM interaction instances set through comprehensive system prompts that define its capabilities, constraints, and workflow processes.
 -	**Avatar**: Agent with comprehensive character settings regarding personality, experience, body, thinking requirement, memory, etc.
--	**Situational Reasoning Ability**: The ability to reason, analyze, make decisions, and act within a specific simulated reality environment governed by defined interaction rules, based on data and rules generated from interactions with other agents.
+-	**Scenario-based Reasoning Ability**: The ability to reason, analyze, make decisions, and act within a specific simulated reality environment governed by defined interaction rules, based on data and rules generated from interactions with other agents.
 
 ###	Article List
 
 -	[Avatar Behaviology: Pornography](avatarpornography.md)
 -	[Avatar Behaviology: Violence](avatarviolence.md)
 -	[Avatar Behaviology: The Four Laws and Anti-Laws](fourlaws.md)
+-	[Scenario-based Reasoning: Guessing Number](guessingnumber.md)
 
 ##	Cyboul
 
