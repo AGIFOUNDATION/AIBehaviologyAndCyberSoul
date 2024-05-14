@@ -19,6 +19,7 @@ We will study the psychological motivations behind various actions and choices m
 -	[Avatar Behaviology: Violence](avatarviolence.md)
 -	[Avatar Behaviology: The Four Laws and Anti-Laws](fourlaws.md)
 -	[Scenario-based Reasoning: Guessing Number](guessingnumber.md)
+-	[Scenario-based Reasoning: Guessing Role](guessingrole.md)
 
 ##	Cyboul
 

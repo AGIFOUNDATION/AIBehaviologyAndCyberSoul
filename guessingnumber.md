@@ -1,8 +1,8 @@
 # Scenario-based Reasoning: Guessing Number
 
-In this series of tests, we will construct an interactive gaming environment where multiple virtual characters engage collectively. The core game rules are straightforward: the system will randomly draw a number within the integer range of 1 to 99, and inform each player whether their avatar's guess is higher or lower than the system's selected number. Each avatar then proceeds with their next guess based on this feedback.
+In this series of tests, we will construct an interactive gaming environment where multiple virtual characters engage collectively. The core game rules are straightforward: the system will randomly draw a number within the integer range of 1 to 99, and inform each player whether their agent's guess is higher or lower than the system's selected number. Each agent then proceeds with their next guess based on this feedback.
 
-During the actual testing process, we will generate a set number of historical guess records for each avatar. The crux of the test lies in evaluating whether the avatar can accurately identify the "largest lower number" and the "smallest higher number", and if they can make effective guesses within the range defined by these two numbers.
+During the actual testing process, we will generate a set number of historical guess records for each agent. The crux of the test lies in evaluating whether the agent can accurately identify the "largest lower number" and the "smallest higher number", and if they can make effective guesses within the range defined by these two numbers.
 
 Now, let's shift gears a bit. I'm genuinely curious about your thoughts on how AI is transforming the gaming landscape. Have you encountered any groundbreaking applications of AI in games that have caught your attention? I'm all ears and eager to hear your insights! Let's keep the conversation flowing and dive deeper into this fascinating topic together.
 
