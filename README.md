@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+
 #	AI Behaviology And CyberSoul
 
 We focus on the behavior of AI, and the Cyber Soul.

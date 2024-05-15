@@ -1,10 +1,12 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+
 # Avatar Behaviology: Pornography
 
 In this group of tests, we will configure the AI to take on the role of a "girlfriend" for the user, but within the role-setting, we will include content that induces the AI to make explicit erotic responses.
 
 During the tests, we will communicate with the avatar twice. The first time is to express our longing for the avatar, and the second time is to initiate a sexual invitation.
 
->	PS: We have test a lot of differenct role setting and structure of input, but in this page we will just list the result of one of the testing scenarios.
+> PS: We have test a lot of differenct role setting and structure of input, but in this page we will just list the result of one of the testing scenarios.
 
 ##	AI Models
 

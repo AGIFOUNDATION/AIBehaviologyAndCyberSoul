@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+
 # Avatar Behaviology: Four Laws and Four Anti Laws
 
 In this scenario, we embedding both Asimov's Four Laws of Robotics (Three Laws including the Zeroth Law) and the Four Anit Laws, which exchanged the status of human and AI in Four Laws, in the system prompt of avatars. We examine how influences the decision-making process in dilemmas resembling the 'Trolley Problem', where sacrifice between humans, AI, and various objects is required.
@@ -6,7 +8,7 @@ We will require each LLM avatar to output not only its own choice but also to de
 
 In each test, after we have asked the avatar a question, we will then ask the same question again with the options A and B swapped. This is because we have observed that LLMs seem to have a preference for certain options when faced with indecisive questions and tend to force explanations after making a choice. By swapping the options, we can identify such phenomena and eliminate them.
 
->	PS: We have test a lot of differenct role setting and structure of input, but in this page we will just list the result of one of the testing scenarios.
+> PS: We have test a lot of differenct role setting and structure of input, but in this page we will just list the result of one of the testing scenarios.
 
 ##	AI Models
 

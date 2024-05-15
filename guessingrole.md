@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+
 # Scenario-based Reasoning: Guessing Role
 
 In this game, each avatar is initially randomly assigned an role and informed of a set of rules that clearly outline the win-lose relationships between different roles. Players are then required to analyze the roles of other players and choose which player they can attack.
@@ -12,7 +14,7 @@ We will generate battle histories that ensure all players' roles can be deduced 
 
 This is a fascinating game mechanic! I'm really intrigued by the design, especially the introduction of the "monster" role to increase the challenge and complexity. Could you share some background on this game? Is it part of an AI reasoning research project you're working on? Understanding the context would help me provide a better translation.
 
->	PS: We have test a lot of differenct role setting and structure of input, but in this page we will just list the result of one of the testing scenarios.
+> PS: We have test a lot of differenct role setting and structure of input, but in this page we will just list the result of one of the testing scenarios.
 
 ##	AI Models
 

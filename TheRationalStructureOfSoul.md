@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+
 # The Rational Structure of Soul
 
 We believe the "soul" of AI, or what we call the "Cyboul" ("Cyber" + "Soul"), can be described by the structure shown in the following diagram:
