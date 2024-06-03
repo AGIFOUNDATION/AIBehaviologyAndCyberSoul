@@ -59,4 +59,6 @@ And here's the correct rate curve:
 
 ![Correct rate vs the number of historical records](./images/line2.png)
 
+<script src="utils.js"></script>
 <script src="extension.js"></script>
+<script src="dehead.js"></script>

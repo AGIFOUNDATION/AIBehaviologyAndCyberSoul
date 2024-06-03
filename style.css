@@ -46,6 +46,9 @@ a:hover {
 	font-weight: bolder;
 }
 
+.navHeader {
+	font-weight: bolder;
+}
 .upper {
 	position: fixed;
 	bottom: 10px;

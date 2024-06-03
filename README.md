@@ -32,3 +32,6 @@ We are committed to reconstructing the Cyboul. It is both "Bicameral mentality" 
 ###	Article List
 
 -	[The Rational Structure of Soul](TheRationalStructureOfSoul.md)
+
+<script src="utils.js"></script>
+<script src="dehead.js"></script>

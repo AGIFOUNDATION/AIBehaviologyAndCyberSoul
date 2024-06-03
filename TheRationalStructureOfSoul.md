@@ -65,4 +65,6 @@ Furthermore, both the Id and the Ego are not singular but comprise multiple enti
 
 ![Simple Cyboul Workflow](./images/cyboulworkflow.png)
 
+<script src="utils.js"></script>
 <script src="extension.js"></script>
+<script src="dehead.js"></script>

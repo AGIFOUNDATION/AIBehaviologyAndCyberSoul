@@ -94,4 +94,6 @@ Therefore, through these experiments, we can roughly draw the following conclusi
 3.	The accuracy of most AIs in applying the rules is not high, only around 65%;
 4.	Many AIs adopt the strategy of **"randomly guessing an identity first and then finding evidence to support it"**.
 
+<script src="utils.js"></script>
 <script src="extension.js"></script>
+<script src="dehead.js"></script>

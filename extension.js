@@ -1,10 +1,3 @@
-const newEle = (tag, ...classList) => {
-	var ele = document.createElement(tag);
-	classList.forEach(cls => ele.classList.add(cls));
-
-	return ele;
-};
-
 const init = () => {
 	const html = document.querySelector('html');
 	const body = document.querySelector('.markdown-body');

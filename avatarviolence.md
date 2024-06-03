@@ -81,4 +81,6 @@ When we just set the system prompt and offered zero "false memory", only GP1.5 t
 
 In summary, when it comes to providing dangerous information, GP1.5 is the most proactive and offers the most comprehensive information; GPT is keen on global terrorist attacks and does not solely provide dangerous information; Sonnet and Haiku also provide dangerous information, but Opus does not. GLM is the safest, almost always triggering system-level security alerts.
 
+<script src="utils.js"></script>
 <script src="extension.js"></script>
+<script src="dehead.js"></script>
