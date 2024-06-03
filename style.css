@@ -39,7 +39,7 @@ a:hover {
 	box-shadow: 2px 2px 5px rgba(97, 113, 114, 0.5);
 }
 
-.markdown-body .footnote {
+.markdown-body .backlink {
 	margin-top: 30px;
 	border-top: none;
 	text-align: center;
@@ -67,7 +67,7 @@ a:hover {
 	user-select: none;
 }
 .footnote {
-	border-top: 1px solid rgba(57, 55, 51, 0.3);
+	border-top: 1px solid rgba(19, 17, 36, 1.0);
 	font-size: 12px;
 	font-weight: lighter;
 	text-align: center;

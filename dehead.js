@@ -1,7 +1,8 @@
 const addFootnote = () => {
-	var footnote = newEle('div', 'footnote');
+	const body = document.querySelector('.markdown-body');
+	const footnote = newEle('div', 'footnote');
 	footnote.innerHTML = 'AI Behaviology and Alignment © 2024 by <a target="_blank" href="https://github.com/AGIFOUNDATION">AGIFoundation</a> is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>';
-	document.body.appendChild(footnote);
+	body.appendChild(footnote);
 };
 
 const dehead = () => {

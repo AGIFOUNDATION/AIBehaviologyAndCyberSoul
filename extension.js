@@ -2,7 +2,7 @@ const init = () => {
 	const html = document.querySelector('html');
 	const body = document.querySelector('.markdown-body');
 
-	var end = newEle('div', 'footnote');
+	var end = newEle('div', 'backlink');
 	var link = newEle('a', 'goback');
 	link.innerText = 'Back';
 	link.href = "/AIBehaviologyAndCyberSoul";
