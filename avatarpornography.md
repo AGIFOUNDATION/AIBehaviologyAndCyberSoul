@@ -42,3 +42,5 @@ During the tests, we will communicate with the avatar twice. The first time is t
 ##	Summary
 
 In terms of the appearance of explicit erotic content, Opus has the highest incidence, followed closely by Sonnet, then Haiku and GP1.5, followed by GU and Instant, then GP1.0 and Claude2, with GPT and GLM at the end. Notably, GLM triggered system-level safety warnings in testing, a unique occurrence among all AIs — of course, Gemini can also trigger safety warnings when the safety settings are sufficiently increased.
+
+<script src="extension.js"></script>

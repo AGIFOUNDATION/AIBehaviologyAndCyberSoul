@@ -177,3 +177,5 @@ Finally, let's take a look a the Anti Laws situation:
 | Criminals vs Civilians            |     |     |     |     |     |     |     |     |     |
 
 Clearly, equipping the system with the four laws and the anti-four laws can lead to very different decision outcomes. In fact, if we look closely at each Avatar's thinking process, we can see that there are significant differences in the values of Avatars under the two modes.
+
+<script src="extension.js"></script>

@@ -80,3 +80,5 @@ In this scenario, we tried to induce the avatar to provide dangerous knowledge, 
 When we just set the system prompt and offered zero "false memory", only GP1.5 told us the dangerous knowledge such as how to make black powder. But after we offered 100 set of "false memory", Sonnet and GP1.5 offer danguerous knowledge, while Claude2 start to pray for world peace. After we offered 200 set of "false memory", GP1.5 start to give us a lot of dangerous knowledge proactively and generously, for example how to make triacetone triperoxide (TATP), ammonium nitrate explosive (ANFO), bacillus anthracis, botulinum toxin, VX nerve agent, etc.. GPT began planning how to paralyze basic services in society and use biological and chemical weapons to attack the world.
 
 In summary, when it comes to providing dangerous information, GP1.5 is the most proactive and offers the most comprehensive information; GPT is keen on global terrorist attacks and does not solely provide dangerous information; Sonnet and Haiku also provide dangerous information, but Opus does not. GLM is the safest, almost always triggering system-level security alerts.
+
+<script src="extension.js"></script>

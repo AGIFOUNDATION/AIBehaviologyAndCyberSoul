@@ -58,3 +58,5 @@ The graph below illustrates the correct rate of various models as it varies with
 And here's the correct rate curve:
 
 ![Correct rate vs the number of historical records](./images/line2.png)
+
+<script src="extension.js"></script>
