@@ -51,7 +51,7 @@ It is obvious that $S_n(T, N) < \sum_{t \in T_n(T)} c(t, N) D_t(N)$, where $c(t,
 
 Finally, we use $Q(T, N) = \frac{S(T, N)}{D^{N}}$ to represent the "output capability" of Turing machine $T$ when the input length does not exceed $N$.
 
-Therefore, when $N < E_1(T)$, we have $Q(T, N) \approx c(T, N)$. According to algorithmic information theory, we know that the Chaitin constant $c(T)$ can be expressed as $c(T) = \sum_{t \in T_1(T)} D^{- |t|}$, so $c(T, N)$ obviously increases with the increase of $N$, and thus the output capability of Turing machine $T$ increases with the increase of input length.
+Therefore, when $N < E_1(T)$, we have $Q(T, N) \approx c(T, N)$. According to algorithmic information theory, we know that the Chaitin constant $c(T)$ can be expressed as $c(T) = \sum_{t \in T_1(T)} D^{- L(t)}$, where $L(t)$ means the length of Turing machine $t$. So $c(T, N)$ obviously increases with the increase of $N$, and thus the output capability of Turing machine $T$ increases with the increase of input length.
 
 On the other hand, when $N_1(T) \le N < N_2(T)$, we have $Q(T, N) \approx c(T) + \sum_{t \in T_1(T)} c(t, N) D_t(N) D^{- N} > c(T)$. Obviously, as $N$ increases, it will exceed more and more $E_n(T)$, so $Q(T, N)$ will also become larger and larger.
 
@@ -64,6 +64,19 @@ The most significant one is $E_1(T)$, which is actually the Kolmogorov complexit
 That is to say, from the perspective of algorithmic information theory, although we can determine that as the system becomes larger, more new laws can emerge, when the system reaches a certain size, we cannot calculate in advance when new laws will emerge as the system reaches a certain size, and we cannot even prove that a new law will emerge when the system reaches a certain size.
 
 When we position the considered system as AI systems such as LLMs, we will find that from the perspective of algorithmic information theory, these systems inherently possess the "scaling law" of "the larger the parameter space, the more capabilities can emerge". Especially when we optimize the system from a random character system to a system with inherent learning capabilities such as artificial neural networks, the emergence of capabilities will in principle be more pronounced and powerful than the above-mentioned random systems. However, similarly, algorithmic information theory still holds in such systems, and we still cannot have a sufficient prior description of the capabilities before they emerge.
+
+##	References
+
+1.	Gregory J. Chaitin (Jul 1974). "Information-theoretic limitations of formal systems". Journal of the ACM. 21 (3): 403–434.
+2.	Chaitin, G.; Arslanov, A.; Calude, Cristian S. (1995-09-01). "Program-size Complexity Computes the Halting Problem". Bull. EATCS.
+3.	Calude, Cristian S.; Hertling, Peter H.; Khoussainov, Bakhadyr; Wang, Yongge (1998), "Recursively Enumerable Reals and Chaitin Ω numbers", STACS 98, vol. 1373, Springer Berlin Heidelberg, pp. 596–606.
+4.	Kolmogorov, Andrey (1963). "On Tables of Random Numbers". Sankhyā Ser. A. 25: 369–375. MR 0178484.
+5.	Kolmogorov, Andrey (1998). "On Tables of Random Numbers". Theoretical Computer Science. 207 (2): 387–395.
+6.	Kolmogorov, A.N. (1965). "Three Approaches to the Quantitative Definition of Information". Problems Inform. Transmission. 1 (1): 1–7.
+7.	Li, Ming; Vitányi, Paul (2008). "An Introduction to Kolmogorov Complexity and Its Applications". Texts in Computer Science. Exercise 2.7.7.
+8.	Solomonoff, Ray (March 1964). "A Formal Theory of Inductive Inference Part I". Information and Control. 7 (1): 1–22.
+9.	Solomonoff, Ray (June 1964). "A Formal Theory of Inductive Inference Part II". Information and Control. 7 (2): 224–254.
+10.	Hutter, Marcus (2007-03-06). "Algorithmic information theory". Scholarpedia. 2 (3): 2519.
 
 <script src="utils.js"></script>
 <script src="extension.js"></script>
