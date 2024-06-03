@@ -41,6 +41,7 @@ a:hover {
 
 .markdown-body .footnote {
 	margin-top: 30px;
+	border-top: none;
 	text-align: center;
 	font-size: 1.2em;
 	font-weight: bolder;
