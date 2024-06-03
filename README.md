@@ -33,5 +33,13 @@ We are committed to reconstructing the Cyboul. It is both "Bicameral mentality" 
 
 -	[The Rational Structure of Soul](TheRationalStructureOfSoul.md)
 
+##	AGI
+
+Where's the road to AGI? What will the AGI be? We are trying to find out some clue to it.
+
+###	Article List
+
+-	[How New Capabilities Emerge, An AIT View](HowNewCapabilitiesEmergeAnAITView.md)
+
 <script src="utils.js"></script>
 <script src="dehead.js"></script>
