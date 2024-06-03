@@ -65,3 +65,9 @@ a:hover {
 	cursor: pointer;
 	user-select: none;
 }
+.footnote {
+	border-top: 1px solid rgba(57, 55, 51, 0.3);
+	font-size: 12px;
+	font-weight: lighter;
+	text-align: center;
+}
