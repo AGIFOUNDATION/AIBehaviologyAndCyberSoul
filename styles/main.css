@@ -43,6 +43,10 @@ a:hover {
 	box-shadow: 2px 2px 5px rgba(97, 113, 114, 0.5);
 }
 
+.markdown-body .headerInfo {
+	padding-top: 50px;
+	text-align: center;
+}
 .markdown-body .backlink {
 	margin-top: 30px;
 	margin-bottom: 30px;

@@ -14,7 +14,11 @@ const dehead = () => {
 	body.removeChild(head);
 
 	const pathname = location.pathname.replace(/^[\s\\\/]+|[\s\\\/]+$/g, '')
-	if (pathname === 'AIBehaviologyAndCyberSoul') return;
+	if (pathname === 'AIBehaviologyAndCyberSoul') {
+		let parag = body.querySelector('p');
+		parag.classList.add("headerInfo");
+		return;
+	}
 
 	const next = body.children[0];
 	if (!next) return;

@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="styles/main.css">
 
 #	How New Capabilities Emerge, An AIT View
 
@@ -78,6 +78,6 @@ When we position the considered system as AI systems such as LLMs, we will find 
 9.	Solomonoff, Ray (June 1964). "A Formal Theory of Inductive Inference Part II". Information and Control. 7 (2): 224–254.
 10.	Hutter, Marcus (2007-03-06). "Algorithmic information theory". Scholarpedia. 2 (3): 2519.
 
-<script src="utils.js"></script>
-<script src="extension.js"></script>
-<script src="dehead.js"></script>
+<script src="scripts/utils.js"></script>
+<script src="scripts/extension.js"></script>
+<script src="scripts/dehead.js"></script>

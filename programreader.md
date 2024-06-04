@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="styles/main.css">
 
 #	Programming Skills Test: Code Reading
 
@@ -71,6 +71,6 @@ Scoring Rules:
 | iFLYTEK-Spark  | 1,2,3,4,5,8,9   | -1.5  |
 | HunYuan-1.7.8  | 1,2,3,4,6,8     | 2     |
 
-<script src="utils.js"></script>
-<script src="extension.js"></script>
-<script src="dehead.js"></script>
+<script src="scripts/utils.js"></script>
+<script src="scripts/extension.js"></script>
+<script src="scripts/dehead.js"></script>
