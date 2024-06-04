@@ -16,6 +16,7 @@ const init = () => {
 	});
 	document.body.appendChild(upper);
 
+	return;
 	body.childNodes.forEach(node => {
 		if (!node.tagName) {
 			let content = node.data;
