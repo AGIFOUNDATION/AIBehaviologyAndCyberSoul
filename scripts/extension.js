@@ -15,21 +15,6 @@ const init = () => {
 		html.scroll(0, 0);
 	});
 	document.body.appendChild(upper);
-
-	return;
-	body.childNodes.forEach(node => {
-		if (!node.tagName) {
-			let content = node.data;
-			content = content.replace(/^\s*|\s*$/g, '');
-			if (!content) return;
-			let match = content.match(/\\\[([\w\W]*)\\\]/);
-			if (!match) return;
-			let p = newEle('p', 'mathjax');
-			p.innerText = "$$\n" + match[1] + '\n$$';
-			body.insertBefore(p, node);
-			body.removeChild(node);
-		}
-	});
 };
 
 init();
