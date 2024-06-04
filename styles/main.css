@@ -95,9 +95,13 @@ body.theme_dark {
 	border-bottom: 1px solid rgba(236, 238, 219, 1.0);
 }
 .theme_dark a,
+.theme_dark .markdown-body pre,
 .theme_dark .markdown-body blockquote,
 .theme_dark .markdown-body table {
 	filter: invert(1);
+}
+.theme_dark .markdown-body table {
+	color: rgba(19, 17, 36, 1.0);
 }
 .theme_dark .bottomButton {
 	background-color: rgba(17, 8, 13, 1.0);
