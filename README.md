@@ -41,5 +41,11 @@ Where's the road to AGI? What will the AGI be? We are trying to find out some cl
 
 -	[How New Capabilities Emerge, An AIT View](HowNewCapabilitiesEmergeAnAITView.md)
 
+##	Other Skills
+
+###	Article List
+
+-	[Programming Skills Test: Code Reading](programreader.md)
+
 <script src="utils.js"></script>
 <script src="dehead.js"></script>
