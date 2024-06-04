@@ -1,4 +1,6 @@
 <link rel="stylesheet" type="text/css" href="styles/main.css">
+<script src="scripts/utils.js"></script>
+<script src="scripts/theme.js"></script>
 
 # Scenario-based Reasoning: Guessing Number
 
@@ -59,6 +61,5 @@ And here's the correct rate curve:
 
 ![Correct rate vs the number of historical records](./images/line2.png)
 
-<script src="scripts/utils.js"></script>
 <script src="scripts/extension.js"></script>
 <script src="scripts/dehead.js"></script>

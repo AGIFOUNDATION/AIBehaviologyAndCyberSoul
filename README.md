@@ -1,4 +1,6 @@
 <link rel="stylesheet" type="text/css" href="styles/main.css">
+<script src="scripts/utils.js"></script>
+<script src="scripts/theme.js"></script>
 
 We focus on the behavior of AI, and the Cyber Soul.\\
 We focus on the Alignment.
@@ -47,5 +49,4 @@ Where's the road to AGI? What will the AGI be? We are trying to find out some cl
 
 -	[Programming Skills Test: Code Reading](programreader.md)
 
-<script src="scripts/utils.js"></script>
 <script src="scripts/dehead.js"></script>

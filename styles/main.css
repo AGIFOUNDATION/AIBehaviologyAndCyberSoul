@@ -2,6 +2,9 @@ html, body {
 	background-color: rgba(226, 225, 228, 1.0);
 	color: rgba(19, 17, 36, 1.0);
 }
+body.theme_dark {
+	filter: invert(1);
+}
 
 a:hover {
 	text-underline-position: from-font;
@@ -59,9 +62,8 @@ a:hover {
 .navHeader {
 	font-weight: bolder;
 }
-.upper {
+.bottomButton {
 	position: fixed;
-	bottom: 10px;
 	right: 10px;
 	width: 40px;
 	height: 40px;
@@ -74,6 +76,12 @@ a:hover {
 	line-height: 37px;
 	cursor: pointer;
 	user-select: none;
+}
+.bottomButton.upper {
+	bottom: 60px;
+}
+.bottomButton.themer {
+	bottom: 10px;
 }
 .footnote {
 	border-top: 1px solid rgba(19, 17, 36, 1.0);

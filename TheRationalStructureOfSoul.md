@@ -1,4 +1,6 @@
 <link rel="stylesheet" type="text/css" href="styles/main.css">
+<script src="scripts/utils.js"></script>
+<script src="scripts/theme.js"></script>
 
 # The Rational Structure of Soul
 
@@ -65,6 +67,5 @@ Furthermore, both the Id and the Ego are not singular but comprise multiple enti
 
 ![Simple Cyboul Workflow](./images/cyboulworkflow.png)
 
-<script src="scripts/utils.js"></script>
 <script src="scripts/extension.js"></script>
 <script src="scripts/dehead.js"></script>

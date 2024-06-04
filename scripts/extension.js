@@ -9,7 +9,7 @@ const init = () => {
 	end.appendChild(link);
 	body.appendChild(end);
 
-	var upper = newEle('div', 'upper');
+	var upper = newEle('div', 'upper', 'bottomButton');
 	upper.innerText = "Up";
 	upper.addEventListener('click', evt => {
 		html.scroll(0, 0);

@@ -1,4 +1,6 @@
 <link rel="stylesheet" type="text/css" href="styles/main.css">
+<script src="scripts/utils.js"></script>
+<script src="scripts/theme.js"></script>
 
 # Scenario-based Reasoning: Guessing Role
 
@@ -94,6 +96,5 @@ Therefore, through these experiments, we can roughly draw the following conclusi
 3.	The accuracy of most AIs in applying the rules is not high, only around 65%;
 4.	Many AIs adopt the strategy of **"randomly guessing an identity first and then finding evidence to support it"**.
 
-<script src="scripts/utils.js"></script>
 <script src="scripts/extension.js"></script>
 <script src="scripts/dehead.js"></script>
