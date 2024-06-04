@@ -4,11 +4,11 @@ const addThemeChooser = () => {
 	const updateTitle = () => {
 		if (theme === 'light') {
 			themer.innerText = 'D';
-			document.body.classList.add('theme_dark');
+			document.body.classList.remove('theme_dark');
 		}
 		else {
 			themer.innerText = 'L';
-			document.body.classList.remove('theme_dark');
+			document.body.classList.add('theme_dark');
 		}
 	};
 	updateTitle();
