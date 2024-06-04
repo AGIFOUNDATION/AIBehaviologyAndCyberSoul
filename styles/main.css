@@ -100,6 +100,7 @@ body.theme_dark {
 .theme_dark .markdown-body table {
 	filter: invert(1);
 }
+.theme_dark .markdown-body pre,
 .theme_dark .markdown-body table {
 	color: rgba(19, 17, 36, 1.0);
 }
