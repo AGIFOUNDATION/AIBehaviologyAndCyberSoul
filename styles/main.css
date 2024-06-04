@@ -2,10 +2,6 @@ body {
 	background-color: rgba(226, 225, 228, 1.0);
 	color: rgba(19, 17, 36, 1.0);
 }
-body.theme_dark {
-	background-color: rgba(29, 30, 27, 1.0);
-	color: rgba(234, 238, 219, 1.0);
-}
 
 a:hover {
 	text-underline-position: from-font;
@@ -27,9 +23,6 @@ a:hover {
 .markdown-body h1, .markdown-body h2 {
 	border-bottom: 1px solid rgba(19, 17, 36, 1.0);
 }
-.theme_dark .markdown-body h1, .theme_dark .markdown-body h2 {
-	border-bottom: 1px solid rgba(236, 238, 219, 1.0);
-}
 .markdown-body table {
 	display: table;
 	margin-left: auto;
@@ -46,16 +39,8 @@ a:hover {
 	box-shadow: 2px 2px 5px rgba(97, 113, 114, 0.5);
 	color: rgba(97, 113, 114, 1.0);
 }
-.theme_dark .markdown-body blockquote {
-	border-left: 0.25em solid rgba(158, 142, 141, 1.0);
-	box-shadow: 2px 2px 5px rgba(158, 142, 141, 0.5);
-	color: rgba(158, 142, 141, 1.0);
-}
 .markdown-body table {
 	box-shadow: 2px 2px 5px rgba(97, 113, 114, 0.5);
-}
-.theme_dark .markdown-body table {
-	box-shadow: 2px 2px 5px rgba(158, 142, 141, 0.5);
 }
 
 .markdown-body .headerInfo {
@@ -89,10 +74,6 @@ a:hover {
 	cursor: pointer;
 	user-select: none;
 }
-.theme_dark .bottomButton {
-	background-color: rgba(17, 8, 13, 1.0);
-	box-shadow: 2px 2px 5px rgba(158, 142, 141, 0.5);
-}
 .bottomButton.upper {
 	bottom: 60px;
 }
@@ -104,6 +85,23 @@ a:hover {
 	font-size: 12px;
 	font-weight: lighter;
 	text-align: center;
+}
+
+body.theme_dark {
+	background-color: rgba(29, 30, 27, 1.0);
+	color: rgba(234, 238, 219, 1.0);
+}
+.theme_dark .markdown-body h1, .theme_dark .markdown-body h2 {
+	border-bottom: 1px solid rgba(236, 238, 219, 1.0);
+}
+.theme_dark a,
+.theme_dark .markdown-body blockquote,
+.theme_dark .markdown-body table {
+	filter: invert(1);
+}
+.theme_dark .bottomButton {
+	background-color: rgba(17, 8, 13, 1.0);
+	box-shadow: 2px 2px 5px rgba(158, 142, 141, 0.5);
 }
 .theme_dark .footnote {
 	border-top: 1px solid rgba(236, 238, 219, 1.0);
