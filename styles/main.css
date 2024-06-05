@@ -61,7 +61,7 @@ a:hover {
 }
 .bottomButton {
 	position: fixed;
-	right: 10px;
+	left: calc(50% + 516px);
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
@@ -85,6 +85,12 @@ a:hover {
 	font-size: 12px;
 	font-weight: lighter;
 	text-align: center;
+}
+@media (max-width: 1152px) {
+	.bottomButton {
+		left: auto;
+		right: 10px;
+	}
 }
 
 body.theme_dark {
