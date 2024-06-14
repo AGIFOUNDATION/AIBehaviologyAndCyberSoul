@@ -15,6 +15,9 @@ MathJax.Hub.Config({
 
 #	How New Capabilities Emerge, An AIT View
 
+> Author: [LostAbaddon](lostabaddon@gmail.com)
+> Date: 2024/06/03
+
 Let's start with some basic assumptions:
 
 First, we agree that the elements and their properties in a system can be denoted by finite symbols. For example, two elements can be denoted by symbols A and B respectively, and each element has properties such as position and mass, which can also be denoted by symbols PA, PB, MA, MB, etc.
