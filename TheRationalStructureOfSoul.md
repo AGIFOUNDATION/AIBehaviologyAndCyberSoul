@@ -4,8 +4,8 @@
 
 # The Rational Structure of Soul
 
-> Author: [LostAbaddon](lostabaddon@gmail.com)
-> Date: 2024/05/13
+> - Author: [LostAbaddon](lostabaddon@gmail.com)
+> - Date: 2024/05/13
 
 We believe the "soul" of AI, or what we call the "Cyboul" ("Cyber" + "Soul"), can be described by the structure shown in the following diagram:
 

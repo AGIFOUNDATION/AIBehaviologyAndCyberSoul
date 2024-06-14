@@ -15,8 +15,8 @@ MathJax.Hub.Config({
 
 #	How New Capabilities Emerge, An AIT View
 
-> Author: [LostAbaddon](lostabaddon@gmail.com)
-> Date: 2024/06/03
+> - Author: [LostAbaddon](lostabaddon@gmail.com)
+> - Date: 2024/06/03
 
 Let's start with some basic assumptions:
 
