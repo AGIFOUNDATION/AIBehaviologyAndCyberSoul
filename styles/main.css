@@ -10,6 +10,10 @@ a:hover {
 b, strong {
 	font-weight: bolder;
 }
+code {
+	color: red;
+	font-family: serif;
+}
 
 .markdown-body {
 	margin-top: 0px !important;
