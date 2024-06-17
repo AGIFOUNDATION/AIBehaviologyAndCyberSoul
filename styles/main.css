@@ -7,6 +7,9 @@ a:hover {
 	text-underline-position: from-font;
 	text-underline-offset: 1px;
 }
+b, strong {
+	font-weight: bolder;
+}
 
 .markdown-body {
 	margin-top: 0px !important;
