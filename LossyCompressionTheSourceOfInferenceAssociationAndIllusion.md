@@ -26,7 +26,7 @@ For example, in the famous example `king - man + woman = queen`, `king`, `man`, 
 
 In summary, we can refer to this vector space as the semantic representation space, where each token is a point in this space, and the relationship between two tokens is a vector within this space.
 
-Such a representation space \( R \) can be mathematically described as an affine space, not just a vector space, to emphasize the difference between points and vectors. Our following discussion is based on this point.
+Such a representation space $R$ can be mathematically described as an affine space, not just a vector space, to emphasize the difference between points and vectors. Our following discussion is based on this point.
 
 ##	The Inter-word Relationship Defined as a Probability Field on a Fiber Bundle
 
@@ -40,13 +40,13 @@ For a first-order Markov process, the choice of the next token depends entirely 
 
 Of course, the above geometric expressions cannot essentially simplify the problem, we just need to remember: the word relationship vector is a probability distribution field on a micro-flow manifold composed of a representation space, that's enough.
 
-Next, let's take \( f(\vec x_1, \vec x_2, ... \vec x_n ; \vec V) \) to represent the distribution probability of the word relationship vector \( \vec V \) at a point \( \vec X = \{ \vec x_1 ... \vec x_n \} \) in the N-order direct product space of the representation space with n semantic elements. Then in the generation process of LLM, we naturally expect the probability of the next token to be \( \vec y \) as:
+Next, let's take $f(\vec x_1, \vec x_2, ... \vec x_n ; \vec V)$ to represent the distribution probability of the word relationship vector $\vec V$ at a point $\vec X = \{ \vec x_1 ... \vec x_n \}$ in the N-order direct product space of the representation space with n semantic elements. Then in the generation process of LLM, we naturally expect the probability of the next token to be $\vec y$ as:
 
 $$
 M(\vec X, \vec y) = \frac{f (\vec X, \vec y - \vec x_n)}{\sum_{\vec V \in \mathfrak{V}} f (\vec X, \vec V)}
 $$
 
-When we set the parameters to make LLM only return the token with the highest probability, we are selecting the token \( \vec y \) that maximizes the above formula. And even if we do not make LLM only return the token with the highest probability, LLM will in fact truncate all possible word relationship vectors during the generation process, that is, remove all word relationship vectors with a probability less than a certain threshold \( \bar f \). In this way, the denominator of the above formula will be adjusted to: \( \sum_{\vec V \in \mathfrak{V_{X, \bar f}}} f (\vec X, \vec V) \), where the vector set \( \mathfrak{V_{X, \bar f}} \) is a subspace of the projective space on \( \vec X \), and the probability distribution in this subspace is greater than the threshold \( \bar f \).
+When we set the parameters to make LLM only return the token with the highest probability, we are selecting the token $\vec y$ that maximizes the above formula. And even if we do not make LLM only return the token with the highest probability, LLM will in fact truncate all possible word relationship vectors during the generation process, that is, remove all word relationship vectors with a probability less than a certain threshold $\bar f$. In this way, the denominator of the above formula will be adjusted to: $\sum_{\vec V \in \mathfrak{V_{X, \bar f}}} f (\vec X, \vec V)$, where the vector set $\mathfrak{V_{X, \bar f}}$ is a subspace of the projective space on $\vec X$, and the probability distribution in this subspace is greater than the threshold $\bar f$.
 
 Since the order of the generation process as a Markov process is fixed, the above process can actually be described as a directed graph: starting from a point in the N-order direct product space of the representation space, several directed edges can be emitted, leading to a set of endpoints, and these directed edges are all assigned a probability distribution value.
 
@@ -60,13 +60,13 @@ When we require the LLM to respond within a limited scope, we are essentially "t
 
 Of course, it is not the case that dimensionality reduction of the representation space will inevitably occur as long as the LLM is completing a task, but rather that dimensionality reduction of the representation space may occur when the LLM is completing a task.
 
-Therefore, when the representation space is trimmed under the influence of a prompt or fine-tuning, we need to consider how semantic element points that are no longer in the trimmed representation space \( T \) should be mapped into \( T \).
+Therefore, when the representation space is trimmed under the influence of a prompt or fine-tuning, we need to consider how semantic element points that are no longer in the trimmed representation space $T$ should be mapped into $T$.
 
-A reasonable guess would be to directly make a geodesic that passes through the semantic element point and is orthogonal to the boundary of \( T \), but in actual problems, such an approach is not actually reasonable because "geodesics" in the representation space do not have a well-defined concept. So we can only assume that such a projection to \( T \) exists, but we are currently unclear about the specific details of this projection.
+A reasonable guess would be to directly make a geodesic that passes through the semantic element point and is orthogonal to the boundary of $T$, but in actual problems, such an approach is not actually reasonable because "geodesics" in the representation space do not have a well-defined concept. So we can only assume that such a projection to $T$ exists, but we are currently unclear about the specific details of this projection.
 
-In any case, the projection from semantic element points outside the task hypersurface to the task hypersurface cannot generally be bijective, and thus this projection will inevitably lose some information. Or to put it the other way around, there must be a set of points on the task hypersurface (and it might even be the entire set) that are the common projections of more than one semantic element. That is to say, \( \exists \vec \alpha \in T, \exists \vec x_1, \vec x_2 ... \vec x_i \in R \) satisfying \( P (\vec x_i) = \vec \alpha \), and \( \| \{ \vec x_i \} \| > 1 \).
+In any case, the projection from semantic element points outside the task hypersurface to the task hypersurface cannot generally be bijective, and thus this projection will inevitably lose some information. Or to put it the other way around, there must be a set of points on the task hypersurface (and it might even be the entire set) that are the common projections of more than one semantic element. That is to say, $\exists \vec \alpha \in T, \exists \vec x_1, \vec x_2 ... \vec x_i \in R$ satisfying $P (\vec x_i) = \vec \alpha$, and $\| \{ \vec x_i \} \| > 1$.
 
-Now let's consider the word relationship vectors, which are also mapped onto the task hypersurface: \( \vec V' + \vec \alpha = P(\vec V + \vec \alpha) \), meaning it can be seen as the joint operation of the original relationship vector and the projection operator \( \hat {\vec V'} = \hat P \circ \hat {\vec V} \) .
+Now let's consider the word relationship vectors, which are also mapped onto the task hypersurface: $\vec V' + \vec \alpha = P(\vec V + \vec \alpha)$, meaning it can be seen as the joint operation of the original relationship vector and the projection operator $\hat {\vec V'} = \hat P \circ \hat {\vec V}$ .
 
 At the same time, we know that the relationship vector is actually a vector field, defined in the projective space of a given point. Since after projection onto the hypersurface, a point on the hypersurface is actually the common projection of multiple points, then at this time the probability distribution of each relationship vector at this projection point is composed of the probability distributions of the same relationship vector from multiple points in the original space:
 
@@ -92,7 +92,7 @@ If we want to distinguish between association and hallucination, it may be diffi
 
 ## Lossy Compression: The Source of Association, Hallucination, and Even Reasoning
 
-From the perspective of Algorithmic Information Theory (AIT), if a target state \( s \) can be generated by a series of Turing machines \( T_i \) with corresponding initial states \( a_i \) such that \( T_i(a_i) = s_i \), and the total data volume of the Turing machines and initial states is smaller than the data volume of the target state itself, then \( T_i(a_i) \) can be said to be a compressed representation of \( s \).
+From the perspective of Algorithmic Information Theory (AIT), if a target state $s$ can be generated by a series of Turing machines $T_i$ with corresponding initial states $a_i$ such that $T_i(a_i) = s_i$, and the total data volume of the Turing machines and initial states is smaller than the data volume of the target state itself, then $T_i(a_i)$ can be said to be a compressed representation of $s$.
 
 In neural networks, there are two layers of meaning. The first layer refers to the existence of a vector in the representation space that can represent the target state, whether this state is an object in the physical world, a process, or a combination of events, objects, and processes. The second layer of meaning is that several nodes in the network can form an output that maps to the target point in the representation space under the right input conditions.
 
