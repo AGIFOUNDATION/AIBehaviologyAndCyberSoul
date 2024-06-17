@@ -42,6 +42,7 @@ Where's the road to AGI? What will the AGI be? We are trying to find out some cl
 ###	Article List
 
 -	[How New Capabilities Emerge, An AIT View](HowNewCapabilitiesEmergeAnAITView.md)
+-	[Lossy Compression: The Source of Association, Illusion, and Maybe Inference](LossyCompressionTheSourceOfInferenceAssociationAndIllusion.md)
 
 ##	Other Skills
 
