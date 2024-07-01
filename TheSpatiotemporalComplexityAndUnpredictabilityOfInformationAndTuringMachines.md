@@ -16,7 +16,7 @@ MathJax.Hub.Config({
 #	The Spatiotemporal Complexity and Unpredictability Of Information And TuringMachines
 
 > - Author: [LostAbaddon](lostabaddon@gmail.com)
-> - Date: 2024/05/13
+> - Date: 2024/06/30
 
 ##	Several Variations of Turing Machines
 
