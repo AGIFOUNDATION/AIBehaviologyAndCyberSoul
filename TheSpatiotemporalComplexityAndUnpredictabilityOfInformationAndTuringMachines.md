@@ -15,6 +15,9 @@ MathJax.Hub.Config({
 
 #	The Spatiotemporal Complexity and Unpredictability Of Information And TuringMachines
 
+> - Author: [LostAbaddon](lostabaddon@gmail.com)
+> - Date: 2024/05/13
+
 ##	Several Variations of Turing Machines
 
 The traditional Turing machine can be formally defined as follows:
