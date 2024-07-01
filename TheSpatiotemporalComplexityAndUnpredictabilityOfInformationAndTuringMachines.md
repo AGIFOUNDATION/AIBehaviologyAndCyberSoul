@@ -169,7 +169,7 @@ In this sense, the time interval is obviously only an appendage of the space int
 Although $E(s)$ doesn't have non-trivial meaning for a single target natural number, if we consider a set composed of a group of inputs and outputs, the situation becomes interesting: for the input set $\\{I_i\\}$ and output set $\\{O_i\\}$, and require that there exists a Turing machine satisfying $\forall i : T(I_i) = O_i$, then we can calculate the following function:
 
 $$
-E \left( \\{I_i\\}, \\{O_i\\} \right) = \max_i\inf_{\forall q : t^{n}(I_i, q) = O_i} n
+E \left( \{ I_i \}, \{ O_i \} \right) = \max_i\inf_{\forall q : t^{n}(I_i, q) = O_i} n
 $$
 
 Note that here the Turing number $q$ is required to be the same for all input-output pairs. This function is no longer a constant only related to the choice of language, but a function related to the set of input-output pairs, and as long as the input and output sets themselves are large enough, it is not computable.
@@ -179,7 +179,7 @@ We can consider this function as measuring the "time interval" from one set to a
 $$
 \begin{align}
 K(i, o) &= \inf_{\forall q : t^n(i, q) = o} \Vert q \Vert\\
-K \left( \\{I_i\\}, \\{O_i\\} \right) &= \sum_i K(I_i, O_i)
+K \left( \{ I_i \}, \{ O_i \} \right) &= \sum_i K(I_i, O_i)
 \end{align}
 $$
 
