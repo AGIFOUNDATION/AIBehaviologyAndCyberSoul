@@ -161,7 +161,7 @@ If there is no Turing machine such that $T(r) = s$, then we denote $\Vert r, s \
 With the shortest path, we can define the "time interval" from $r$ to $s$:
 
 $$
-\lgroup r, s \rgroup = \inf_{q \in \\{q_{r,s}\\}} n
+\lgroup r, s \rgroup = \inf_{q \in \{ q_{r,s} \}} n
 $$
 
 In this sense, the time interval is obviously only an appendage of the space interval.
