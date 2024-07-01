@@ -30,8 +30,8 @@ Where:
 - $F \subseteq Q$ is the set of accepting states or final states;
 - $\Gamma$ is a non-empty finite alphabet;
 - $b$ is an element of $\Gamma$, uniquely representing blank content;
-- $\Sigma\subseteq\Gamma\backslash \{b\}$ is the input alphabet;
-- $\delta : \left( Q \backslash F \right) \times\Gamma\nrightarrow Q \times\Gamma\times \{L, R\}$ is a partial function called the "transition function", where $L$ indicates the read-write head moves one position left, and $R$ indicates it moves one position right.
+- $\Sigma\subseteq\Gamma\backslash \\{b\\}$ is the input alphabet;
+- $\delta : \left( Q \backslash F \right) \times\Gamma\nrightarrow Q \times\Gamma\times \\{L, R\\}$ is a partial function called the "transition function", where $L$ indicates the read-write head moves one position left, and $R$ indicates it moves one position right.
 
 Since $\delta$ is a partial function, there exists a situation where a specific state $\left< q \in Q, \gamma\in\Gamma\right>$ is not in the domain of $\delta$, i.e., "undefined", in which case the system enters a "rejection" state.
 
@@ -71,11 +71,11 @@ Since a Turing machine starts from an initial state $\left< q \in Q, s \in\Gamma
 
 Since the transition function is a partial function from natural numbers to natural numbers, and the number of times the transition function is applied is a natural number, it's not difficult to see that the Turing machine itself must also be a partial function from natural numbers to natural numbers.
 
-We denote the set of all partial functions mapping the set of natural numbers to the set of natural numbers as $\mathfrak{F}$, then obviously $\left\{ T \right\} \subset\mathfrak{F}$.
+We denote the set of all partial functions mapping the set of natural numbers to the set of natural numbers as $\mathfrak{F}$, then obviously $\left\\{ T \right\\} \subset \mathfrak{F}$.
 
-A very obvious example that belongs to $\mathfrak{F}$ but not to $\{T\}$ is the halting problem decision function, which maps the i-th Turing machine (under any ordering) to $\{0,1\}$, where 0 indicates it will not halt and 1 indicates it will halt. Since this function definitely exists, it is obviously an element of $\mathfrak{F}$; and it is obviously not computable because the halting problem for Turing machines is not computable, so it is obviously not an element of $\{T\}$.
+A very obvious example that belongs to $\mathfrak{F}$ but not to $\\{T\\}$ is the halting problem decision function, which maps the i-th Turing machine (under any ordering) to $\\{0,1\\}$, where 0 indicates it will not halt and 1 indicates it will halt. Since this function definitely exists, it is obviously an element of $\mathfrak{F}$; and it is obviously not computable because the halting problem for Turing machines is not computable, so it is obviously not an element of $\\{T\\}$.
 
-So, if we use an element from $\mathfrak{F} \backslash \{T\}$ as the transition function to construct a Turing machine, can we obtain "higher computational power"? That is actually an Oracle Machine, where the part of the newly added transition function that cannot be expressed by $\{T\}$ is equivalent to an added "oracle", and the computational power of the new model has completed a "Turing jump" relative to the Turing machine.
+So, if we use an element from $\mathfrak{F} \backslash \\{T\\}$ as the transition function to construct a Turing machine, can we obtain "higher computational power"? That is actually an Oracle Machine, where the part of the newly added transition function that cannot be expressed by $\\{T\\}$ is equivalent to an added "oracle", and the computational power of the new model has completed a "Turing jump" relative to the Turing machine.
 
 Therefore, after the above transformations, we have actually transformed the Turing machine into something like this:
 
@@ -86,13 +86,13 @@ $$
 Where:
 
 - $t : N \nrightarrow N$ is the state transition function (partial function), or now can be called the "basic operator";
-- $c : N \rightarrow \{0, 1\}$ is the "termination judgment", satisfying $c(t^{n < n_0}(s)) = 0\land c(t^{n \ge n_0}(s)) = 1$
+- $c : N \rightarrow \\{0, 1\\}$ is the "termination judgment", satisfying $c(t^{n < n_0}(s)) = 0\land c(t^{n \ge n_0}(s)) = 1$
 
 We no longer distinguish between state space and character set, as they are now unified and mapped to the set of natural numbers. We can further require:
 
 $$
 t(s) = \begin{cases}
-\empty & s \not\in\mathrm{def}(t) \\
+\emptyset & s \not\in\mathrm{def}(t) \\
 s' \neq s & c(s) = 0\\
 s & c(s) = 1
 \end{cases}
@@ -102,17 +102,17 @@ $$
 
 Let's now focus on the basic operator $t$ of the Turing machine $T = \left< t, c \right>$ represented by the above pair. Its function, as defined earlier, is a partial function mapping natural numbers to natural numbers.
 
-Therefore, starting from any given natural number $s$, we take the sequence $\{t^n(s)\}$. This sequence is either finite, corresponding to some natural number $n$ making $t^n(s)$ undefined for $t$; or the sequence eventually stabilizes at some value; or the sequence continues indefinitely without ever stabilizing.
+Therefore, starting from any given natural number $s$, we take the sequence $\\{t^n(s)\\}$. This sequence is either finite, corresponding to some natural number $n$ making $t^n(s)$ undefined for $t$; or the sequence eventually stabilizes at some value; or the sequence continues indefinitely without ever stabilizing.
 
 In fact, the first case can be included in the second case. For example, we can wrap another Turing machine around the original one, which directly halts in an accepting state and outputs 0 when it finds that the target Turing machine's state is rejecting, and only outputs 0 when the internal Turing machine reaches a rejecting state.
 
 Therefore, for any given natural number, the sequence generated by repeatedly applying the basic operator either stabilizes at a specific value or changes infinitely and never stabilizes.
 
-Thus, Rice's theorem actually states: **The task of determining whether the sequence $\{t^n(s)\}$ starting from any natural number $s$ for any basic operator $t$ has a specific pattern is not computable.**
+Thus, Rice's theorem actually states: **The task of determining whether the sequence $\\{t^n(s)\\}$ starting from any natural number $s$ for any basic operator $t$ has a specific pattern is not computable.**
 
-Or we can put it another way: **If a computable algorithm can determine whether the sequence $\{t^n(s)\}$ satisfies a specified non-trivial decision function $F(t^{N+C}(s)) = 1$ after $C$ terms based on the first $N$ terms of the sequence, then this algorithm cannot hold for any basic operator $t$ and natural number $s$, where $C$ is a constant only related to $t$.**
+Or we can put it another way: **If a computable algorithm can determine whether the sequence $\\{t^n(s)\\}$ satisfies a specified non-trivial decision function $F(t^{N+C}(s)) = 1$ after $C$ terms based on the first $N$ terms of the sequence, then this algorithm cannot hold for any basic operator $t$ and natural number $s$, where $C$ is a constant only related to $t$.**
 
-Let's now consider a multi-read-write head system, that is, an initial set of points $S$, which forms a set of points $\{t^n(S)\}$ that changes with "time" under the action of the basic operator. Then we can make a similar assertion: **There does not exist a computable universal algorithm to determine whether any such set of points can satisfy any specified non-trivial condition in a configuration after a time duration only related to the basic operator.**
+Let's now consider a multi-read-write head system, that is, an initial set of points $S$, which forms a set of points $\\{t^n(S)\\}$ that changes with "time" under the action of the basic operator. Then we can make a similar assertion: **There does not exist a computable universal algorithm to determine whether any such set of points can satisfy any specified non-trivial condition in a configuration after a time duration only related to the basic operator.**
 
 This means that universal predictability does not exist here. For a system complex enough (to the extent that it can accommodate a universal Turing machine, or in terms of structured program theorem, complex enough to accommodate several basic operations), there exists a predictability time limit only related to the complexity of the system itself, and predictions beyond this limit are impossible.
 
@@ -161,15 +161,15 @@ If there is no Turing machine such that $T(r) = s$, then we denote $\Vert r, s \
 With the shortest path, we can define the "time interval" from $r$ to $s$:
 
 $$
-\lgroup r, s \rgroup = \inf_{q \in \{q_{r,s}\}} n
+\lgroup r, s \rgroup = \inf_{q \in \\{q_{r,s}\\}} n
 $$
 
 In this sense, the time interval is obviously only an appendage of the space interval.
 
-Although $E(s)$ doesn't have non-trivial meaning for a single target natural number, if we consider a set composed of a group of inputs and outputs, the situation becomes interesting: for the input set $\{I_i\}$ and output set $\{O_i\}$, and require that there exists a Turing machine satisfying $\forall i : T(I_i) = O_i$, then we can calculate the following function:
+Although $E(s)$ doesn't have non-trivial meaning for a single target natural number, if we consider a set composed of a group of inputs and outputs, the situation becomes interesting: for the input set $\\{I_i\\}$ and output set $\\{O_i\\}$, and require that there exists a Turing machine satisfying $\forall i : T(I_i) = O_i$, then we can calculate the following function:
 
 $$
-E \left( \{I_i\}, \{O_i\} \right) = \max_i\inf_{\forall q : t^{n}(I_i, q) = O_i} n
+E \left( \\{I_i\\}, \\{O_i\\} \right) = \max_i\inf_{\forall q : t^{n}(I_i, q) = O_i} n
 $$
 
 Note that here the Turing number $q$ is required to be the same for all input-output pairs. This function is no longer a constant only related to the choice of language, but a function related to the set of input-output pairs, and as long as the input and output sets themselves are large enough, it is not computable.
@@ -179,7 +179,7 @@ We can consider this function as measuring the "time interval" from one set to a
 $$
 \begin{align}
 K(i, o) &= \inf_{\forall q : t^n(i, q) = o} \Vert q \Vert\\
-K \left( \{I_i\}, \{O_i\} \right) &= \sum_i K(I_i, O_i)
+K \left( \\{I_i\\}, \\{O_i\\} \right) &= \sum_i K(I_i, O_i)
 \end{align}
 $$
 
@@ -187,7 +187,7 @@ In other words, spatial scale and spatial interval $K$ can be defined on individ
 
 In addition to defining spatiotemporal complexity on individual natural numbers and sets of input-output pairs, we can also define the spatiotemporal complexity of a single Turing mapping (the natural number mapping corresponding to a Turing machine).
 
-We first define $\mathrm{acc}(q)$ as the set of natural numbers $s$ for which there exists a finite natural number $n$ such that $c(t^n(s, q)) = 1$, and $\mathrm{fin}(q) = \{t^n(s, q) | \exists n \in N : c(t^n(s, q)) = 1 \}$. This allows us to define the spatiotemporal complexity of a Turing machine, or rather its corresponding Turing number $q$:
+We first define $\mathrm{acc}(q)$ as the set of natural numbers $s$ for which there exists a finite natural number $n$ such that $c(t^n(s, q)) = 1$, and $\mathrm{fin}(q) = \\{t^n(s, q) \| \exists n \in N : c(t^n(s, q)) = 1 \\}$. This allows us to define the spatiotemporal complexity of a Turing machine, or rather its corresponding Turing number $q$:
 
 $$
 \begin{align}
