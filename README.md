@@ -44,11 +44,16 @@ Where's the road to AGI? What will the AGI be? We are trying to find out some cl
 -	[How New Capabilities Emerge, An AIT View](HowNewCapabilitiesEmergeAnAITView.md)
 -	[Lossy Compression: The Source of Association, Illusion, and Maybe Inference](LossyCompressionTheSourceOfInferenceAssociationAndIllusion.md)
 -	[The Spatiotemporal Complexity and Unpredictability Of Information And TuringMachines](TheSpatiotemporalComplexityAndUnpredictabilityOfInformationAndTuringMachines.md)
+-	[Can the Chinese Room Argument really refute Strong Artificial Intelligence?](ChineseRoom.md)
 
 ##	Other Skills
 
 ###	Article List
 
 -	[Programming Skills Test: Code Reading](programreader.md)
+
+##	CyberButler: Cyprite
+
+[Your personal knowledge butler.](aboutcyprite.md)
 
 <script src="scripts/dehead.js"></script>
