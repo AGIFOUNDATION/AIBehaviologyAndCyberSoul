@@ -1,3 +1,7 @@
+<link rel="stylesheet" type="text/css" href="styles/main.css">
+<script src="scripts/utils.js"></script>
+<script src="scripts/theme.js"></script>
+
 #	Can the Chinese Room Argument really refute Strong Artificial Intelligence?
 
 In 1980, American philosopher John Searle proposed the Chinese Room thought experiment, but similar ideas can be traced back to the famous 18th-century mathematician and philosopher Gottfried Leibniz, who proposed calculus in mathematics and monadology in philosophy.
@@ -169,3 +173,6 @@ At least, so far no one has been able to propose a truly effective thinking mode
 This question is just like what is consciousness, what is free will, and other such ultimate questions. Humans have been pursuing them for several thousand years, but have never been able to find the answer to the question.
 
 All we can say at this point is that the Chinese room problem cannot truly refute the possibility of strong artificial intelligence. At least arguing against the possibility of strong artificial intelligence solely from the Chinese room problem is very inadequate - of course, we also cannot therefore conclude that strong artificial intelligence will definitely be realized. At least, there is also no sufficient argument between whether it can be realized and the currently popular LLMs.
+
+<script src="scripts/extension.js"></script>
+<script src="scripts/dehead.js"></script>
